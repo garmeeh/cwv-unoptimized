@@ -2,7 +2,6 @@ import { useState } from 'react';
 import Head from 'next/head';
 
 import Fuse from 'fuse.js';
-import moment from 'moment';
 import _ from 'lodash';
 
 import styles from '../styles/Home.module.css';
@@ -54,7 +53,6 @@ export default function Start({ countries }) {
               // Fake analytics hit
               console.info({
                 searchedAt: _.now(),
-                searchedDate: moment().format('MMMM Do YYYY, h:mm:ss a'),
               });
             }}
           />
